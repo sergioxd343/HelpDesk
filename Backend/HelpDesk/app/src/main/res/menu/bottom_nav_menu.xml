@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/empleado_registro"
+        android:icon="@drawable/icon_empleado"
+        android:title="Registro" />
+
+    <item
+        android:id="@+id/empleado_consulta"
+        android:icon="@drawable/icon_lista"
+        android:title="Consulta" />
+
+
+</menu>

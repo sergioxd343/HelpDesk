@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EEEB"
+    android:paddingTop="0dp"
+    android:layout_marginBottom="50dp"
+    tools:context=".RegistroEmpleadoFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/add_empleado"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Registrar empleado"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/imgFoto"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imgFoto"
+                app:layout_constraintTop_toBottomOf="@+id/imgFoto" />
+
+            <EditText
+                android:id="@+id/etPrimerApellido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="Primer Apellido"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColorHint="#88000000"
+                app:layout_constraintEnd_toEndOf="@+id/etNombre"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/etNombre"
+                app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#88000000"
+                android:textColorHint="#88000000"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/txtFoto" />
+
+            <EditText
+                android:id="@+id/etSegundoApellido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Segundo apellido"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColorHint="#88000000"
+                app:layout_constraintEnd_toEndOf="@+id/etPrimerApellido"
+                app:layout_constraintStart_toStartOf="@+id/etPrimerApellido"
+                app:layout_constraintTop_toBottomOf="@+id/etPrimerApellido" />
+
+            <EditText
+                android:id="@+id/etCorreo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Correo Electronico"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/etRFC"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/etRFC"
+                app:layout_constraintTop_toBottomOf="@+id/etRFC" />
+
+            <EditText
+                android:id="@+id/etRFC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="RFC"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="#88000000"
+                app:layout_constraintEnd_toEndOf="@+id/etSegundoApellido"
+                app:layout_constraintStart_toStartOf="@+id/etSegundoApellido"
+                app:layout_constraintTop_toBottomOf="@+id/etSegundoApellido" />
+
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Telefono"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="#88000000"
+                app:layout_constraintEnd_toEndOf="@+id/etCorreo"
+                app:layout_constraintStart_toStartOf="@+id/etCorreo"
+                app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.2" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.8" />
+
+            <EditText
+                android:id="@+id/etUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Usuario"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/etTelefono"
+                app:layout_constraintStart_toStartOf="@+id/etTelefono"
+                app:layout_constraintTop_toBottomOf="@+id/etTelefono" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/etUser"
+                app:layout_constraintStart_toStartOf="@+id/etUser"
+                app:layout_constraintTop_toBottomOf="@+id/etUser" />
+
+            <EditText
+                android:id="@+id/etRol"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Rol"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/etPassword"
+                app:layout_constraintStart_toStartOf="@+id/etPassword"
+                app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+            <EditText
+                android:id="@+id/etDepartamento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Departamento"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/etRol"
+
+                app:layout_constraintStart_toStartOf="@+id/etRol"
+                app:layout_constraintTop_toBottomOf="@+id/etRol" />
+
+            <Button
+                android:id="@+id/btnRegistroEmpleado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Registrar Empleado"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/etDepartamento"
+                app:layout_constraintStart_toStartOf="@+id/etDepartamento"
+                app:layout_constraintTop_toBottomOf="@+id/etDepartamento" />
+
+            <EditText
+                android:id="@+id/txtFoto"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="9dp"
+                android:ems="10"
+                android:hint="Foto"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <ImageButton
+                android:id="@+id/btnSubir"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                android:backgroundTint="#FFD600"
+                android:src="@drawable/icon_file_upload"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/txtFoto"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</FrameLayout>

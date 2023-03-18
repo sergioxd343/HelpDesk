@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/empleado_registro">
+
+    <fragment
+        android:id="@+id/empleado_registro"
+        android:name="org.utl.helpdesk.RegistroEmpleadoFragment"
+        android:label="@string/title_registro"
+        tools:layout="@layout/fragment_registro_empleado" />
+
+    <fragment
+        android:id="@+id/empleado_consulta"
+        android:name="org.utl.helpdesk.Listado_empleado"
+        android:label="@string/title_consulta"
+        tools:layout="@layout/fragment_listado_empleado" />
+</navigation>

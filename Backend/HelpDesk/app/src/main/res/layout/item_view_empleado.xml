@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/fondo_degradado"
+    android:elevation="7dp"
+    android:padding="15dp">
+
+
+    <ImageView
+        android:id="@+id/imgEmpleadoRv"
+        android:layout_width="127dp"
+        android:layout_height="126dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/person_cliente" />
+
+    <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imgEmpleadoRv"
+        android:text="Nombre"
+        android:textColor="@color/dark_gray" />
+
+    <TextView
+        android:id="@+id/txtNombreEmpleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblNombre"
+        android:layout_toEndOf="@+id/imgEmpleadoRv"
+        android:text="-"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/lblRFC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNombreEmpleado"
+        android:layout_toEndOf="@+id/imgEmpleadoRv"
+        android:text="RFC"
+        android:textColor="@color/dark_gray" />
+
+    <TextView
+        android:id="@+id/txtRFC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblRFC"
+        android:layout_toEndOf="@+id/imgEmpleadoRv"
+        android:text="-"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRFC"
+        android:layout_toEndOf="@+id/imgEmpleadoRv"
+        android:text="Email"
+        android:textColor="@color/dark_gray" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblEmail"
+        android:layout_toEndOf="@+id/imgEmpleadoRv"
+        android:text="-"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/lblTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_toEndOf="@+id/imgEmpleadoRv"
+        android:text="Telefono"
+        android:textColor="@color/dark_gray" />
+
+    <TextView
+        android:id="@+id/txtTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblTelefono"
+        android:layout_toEndOf="@+id/imgEmpleadoRv"
+        android:text="-"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/lblDepartamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTelefono"
+        android:layout_toEndOf="@+id/imgEmpleadoRv"
+        android:text="Foto del Empleado"
+        android:textColor="@color/dark_gray" />
+
+    <TextView
+        android:id="@+id/txtDepartamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblDepartamento"
+        android:layout_toEndOf="@+id/imgEmpleadoRv"
+        android:text="-"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+</RelativeLayout>
